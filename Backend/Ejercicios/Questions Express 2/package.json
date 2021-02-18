@@ -1,0 +1,14 @@
+{
+  "name": "questions_quiz",
+  "version": "1.0.0",
+  "description": "Preguntas para quiz con express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CISCU",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
