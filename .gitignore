@@ -1,3 +1,7 @@
 node_modules,
 package-lock.json,
 .env,
+serviceAccount.json,
+serviceAccount_BU.json,
+
+cert/*
