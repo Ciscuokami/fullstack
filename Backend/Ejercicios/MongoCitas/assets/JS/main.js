@@ -3,6 +3,7 @@ const body = document.querySelector("body");
 function pedirCita() {
     const divForm = document.createElement("div");
     const formulario = document.createElement("form");
+    const tituloCita = document.createElement("h1");
     const labelNombreCita = document.createElement("label");
     const inputNombreCita = document.createElement("input");
     const labelCita = document.createElement("labe");
@@ -11,14 +12,17 @@ function pedirCita() {
 
     divForm.id = "divForm";
     formulario.id = "formulario";
+    tituloCita.id = "tituloCita";
     btnCita.id= "btnCita";
 
+    tituloCita.innerText = "Guarda las citas que más te gustan";
     labelNombreCita.innerText = "Nombre";
-    inputNombreCita.innerText = "Introduce un nombre";
+    inputNombreCita.placeholder = "Introduce un nombre";
     labelCita.innerText = "Cita";
-    inputCita.innerText = "Introduce una cita";
+    inputCita.placeholder = "Introduce una cita";
     btnCita.innerText = "Guardar Cita";
 
+    formulario.appendChild(tituloCita);
     formulario.appendChild(labelNombreCita);
     formulario.appendChild(inputNombreCita);
     formulario.appendChild(labelCita);
@@ -28,7 +32,7 @@ function pedirCita() {
     body.appendChild(divForm);
 }
 
-pedirCita();
+// pedirCita();
 
 
 // const MongoClient = require("mongodb").MongoClient;
